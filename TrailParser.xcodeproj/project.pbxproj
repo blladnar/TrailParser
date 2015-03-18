@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB51425A1ABA2FA700E77AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5142591ABA2FA700E77AAC /* AppDelegate.swift */; };
+		BB51425C1ABA2FA700E77AAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB51425B1ABA2FA700E77AAC /* Images.xcassets */; };
+		BB51425F1ABA2FA700E77AAC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB51425D1ABA2FA700E77AAC /* MainMenu.xib */; };
+		BB51426B1ABA2FA700E77AAC /* TrailParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51426A1ABA2FA700E77AAC /* TrailParserTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB5142651ABA2FA700E77AAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB51424C1ABA2FA700E77AAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB5142531ABA2FA700E77AAC;
+			remoteInfo = TrailParser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB5142541ABA2FA700E77AAC /* TrailParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrailParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5142581ABA2FA700E77AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5142591ABA2FA700E77AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB51425B1ABA2FA700E77AAC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BB51425E1ABA2FA700E77AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BB5142641ABA2FA700E77AAC /* TrailParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrailParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5142691ABA2FA700E77AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB51426A1ABA2FA700E77AAC /* TrailParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailParserTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB5142511ABA2FA700E77AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5142611ABA2FA700E77AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB51424B1ABA2FA700E77AAC = {
+			isa = PBXGroup;
+			children = (
+				BB5142561ABA2FA700E77AAC /* TrailParser */,
+				BB5142671ABA2FA700E77AAC /* TrailParserTests */,
+				BB5142551ABA2FA700E77AAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB5142551ABA2FA700E77AAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB5142541ABA2FA700E77AAC /* TrailParser.app */,
+				BB5142641ABA2FA700E77AAC /* TrailParserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB5142561ABA2FA700E77AAC /* TrailParser */ = {
+			isa = PBXGroup;
+			children = (
+				BB5142591ABA2FA700E77AAC /* AppDelegate.swift */,
+				BB51425B1ABA2FA700E77AAC /* Images.xcassets */,
+				BB51425D1ABA2FA700E77AAC /* MainMenu.xib */,
+				BB5142571ABA2FA700E77AAC /* Supporting Files */,
+			);
+			path = TrailParser;
+			sourceTree = "<group>";
+		};
+		BB5142571ABA2FA700E77AAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB5142581ABA2FA700E77AAC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB5142671ABA2FA700E77AAC /* TrailParserTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB51426A1ABA2FA700E77AAC /* TrailParserTests.swift */,
+				BB5142681ABA2FA700E77AAC /* Supporting Files */,
+			);
+			path = TrailParserTests;
+			sourceTree = "<group>";
+		};
+		BB5142681ABA2FA700E77AAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB5142691ABA2FA700E77AAC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB5142531ABA2FA700E77AAC /* TrailParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB51426E1ABA2FA700E77AAC /* Build configuration list for PBXNativeTarget "TrailParser" */;
+			buildPhases = (
+				BB5142501ABA2FA700E77AAC /* Sources */,
+				BB5142511ABA2FA700E77AAC /* Frameworks */,
+				BB5142521ABA2FA700E77AAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrailParser;
+			productName = TrailParser;
+			productReference = BB5142541ABA2FA700E77AAC /* TrailParser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB5142631ABA2FA700E77AAC /* TrailParserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5142711ABA2FA700E77AAC /* Build configuration list for PBXNativeTarget "TrailParserTests" */;
+			buildPhases = (
+				BB5142601ABA2FA700E77AAC /* Sources */,
+				BB5142611ABA2FA700E77AAC /* Frameworks */,
+				BB5142621ABA2FA700E77AAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB5142661ABA2FA700E77AAC /* PBXTargetDependency */,
+			);
+			name = TrailParserTests;
+			productName = TrailParserTests;
+			productReference = BB5142641ABA2FA700E77AAC /* TrailParserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB51424C1ABA2FA700E77AAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Brown, Randall";
+				TargetAttributes = {
+					BB5142531ABA2FA700E77AAC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					BB5142631ABA2FA700E77AAC = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = BB5142531ABA2FA700E77AAC;
+					};
+				};
+			};
+			buildConfigurationList = BB51424F1ABA2FA700E77AAC /* Build configuration list for PBXProject "TrailParser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB51424B1ABA2FA700E77AAC;
+			productRefGroup = BB5142551ABA2FA700E77AAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB5142531ABA2FA700E77AAC /* TrailParser */,
+				BB5142631ABA2FA700E77AAC /* TrailParserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB5142521ABA2FA700E77AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB51425C1ABA2FA700E77AAC /* Images.xcassets in Resources */,
+				BB51425F1ABA2FA700E77AAC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5142621ABA2FA700E77AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB5142501ABA2FA700E77AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB51425A1ABA2FA700E77AAC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5142601ABA2FA700E77AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB51426B1ABA2FA700E77AAC /* TrailParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB5142661ABA2FA700E77AAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB5142531ABA2FA700E77AAC /* TrailParser */;
+			targetProxy = BB5142651ABA2FA700E77AAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB51425D1ABA2FA700E77AAC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB51425E1ABA2FA700E77AAC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB51426C1ABA2FA700E77AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB51426D1ABA2FA700E77AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BB51426F1ABA2FA700E77AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TrailParser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB5142701ABA2FA700E77AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TrailParser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BB5142721ABA2FA700E77AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TrailParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrailParser.app/Contents/MacOS/TrailParser";
+			};
+			name = Debug;
+		};
+		BB5142731ABA2FA700E77AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TrailParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrailParser.app/Contents/MacOS/TrailParser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB51424F1ABA2FA700E77AAC /* Build configuration list for PBXProject "TrailParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB51426C1ABA2FA700E77AAC /* Debug */,
+				BB51426D1ABA2FA700E77AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB51426E1ABA2FA700E77AAC /* Build configuration list for PBXNativeTarget "TrailParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB51426F1ABA2FA700E77AAC /* Debug */,
+				BB5142701ABA2FA700E77AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB5142711ABA2FA700E77AAC /* Build configuration list for PBXNativeTarget "TrailParserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5142721ABA2FA700E77AAC /* Debug */,
+				BB5142731ABA2FA700E77AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB51424C1ABA2FA700E77AAC /* Project object */;
+}
