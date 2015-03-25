@@ -41,7 +41,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             var err : NSError?
             var parser = HTMLParser(html: html, error: &err)
             
-            var landmarksDictionary = [String,Double]();
+            var trailMaker = TrailMaker(name: self.nameField.stringValue, logo: self.logoField.stringValue);
             
             var bodyNode = parser.body
             
@@ -79,42 +79,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
                             let row = String(format:"%f %@", mileage.doubleValue, feature.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()));
                             
-                            let landmark = Landmark(name:feature, distanceInMiles:mileage.doubleValue);
-                            landmarks.append(landmark);
-                            
-                            println(row);
+                            trailMaker.addLandmarkNamed(feature, distanceInMiles: mileage.doubleValue);
                         }
-                        
-                     //   println(node.contents)
                     }
                     
                 }
             }
             
-            var x = 0;
             
-            var landmarkDicts = Array<Dictionary<String,AnyObject>>();
-            
-            for landmarkd in landmarks
-            {
-                var landmarkDictionary :Dictionary<String, AnyObject> = ["name":landmarkd.name, "distance":landmarkd.distance, "distanceInMiles":landmarkd.distanceInMiles];
-                landmarkDicts.append(landmarkDictionary);
+            self.outputField.stringValue = trailMaker.trailJSON();
 
-            }
-            
-            let trail = ["name" : self.nameField.stringValue, "logo" : self.logoField.stringValue, "landmarks" : landmarkDicts];
-            
-            var jsonData = NSJSONSerialization.dataWithJSONObject(trail, options: NSJSONWritingOptions.PrettyPrinted, error: nil);
-            
-            let jsonString = NSString(data: jsonData!, encoding: NSUTF8StringEncoding);
-            self.outputField.stringValue = jsonString!;
             
         }
     }
 
-}
-
-func toMeters(miles:Double) -> Double {
-    return miles * 1609.34;
 }
 

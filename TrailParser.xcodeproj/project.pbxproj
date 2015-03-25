@@ -15,6 +15,11 @@
 		BB5142781ABA317700E77AAC /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5142751ABA317700E77AAC /* HTMLParser.swift */; };
 		BB51427A1ABA31D100E77AAC /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5142791ABA31D100E77AAC /* libxml2.dylib */; };
 		BB51427C1AC34B0200E77AAC /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51427B1AC34B0200E77AAC /* Landmark.swift */; };
+		BB51427E1AC35E6000E77AAC /* TrailMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51427D1AC35E6000E77AAC /* TrailMaker.swift */; };
+		BB51428A1AC3634A00E77AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5142891AC3634A00E77AAC /* AppDelegate.swift */; };
+		BB51428C1AC3634A00E77AAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB51428B1AC3634A00E77AAC /* Images.xcassets */; };
+		BB51428F1AC3634B00E77AAC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB51428D1AC3634B00E77AAC /* MainMenu.xib */; };
+		BB51429B1AC3634B00E77AAC /* CustomTrailBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51429A1AC3634B00E77AAC /* CustomTrailBuilderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +29,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = BB5142531ABA2FA700E77AAC;
 			remoteInfo = TrailParser;
+		};
+		BB5142951AC3634B00E77AAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB51424C1ABA2FA700E77AAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB5142841AC3634A00E77AAC;
+			remoteInfo = CustomTrailBuilder;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -41,6 +53,15 @@
 		BB5142761ABA317700E77AAC /* Swift-HTML-Parser-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swift-HTML-Parser-Bridging-Header.h"; sourceTree = "<group>"; };
 		BB5142791ABA31D100E77AAC /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BB51427B1AC34B0200E77AAC /* Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		BB51427D1AC35E6000E77AAC /* TrailMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailMaker.swift; sourceTree = "<group>"; };
+		BB5142851AC3634A00E77AAC /* CustomTrailBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTrailBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5142881AC3634A00E77AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5142891AC3634A00E77AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB51428B1AC3634A00E77AAC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BB51428E1AC3634B00E77AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BB5142941AC3634B00E77AAC /* CustomTrailBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTrailBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5142991AC3634B00E77AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB51429A1AC3634B00E77AAC /* CustomTrailBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTrailBuilderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +80,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB5142821AC3634A00E77AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5142911AC3634B00E77AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -68,6 +103,8 @@
 				BB5142791ABA31D100E77AAC /* libxml2.dylib */,
 				BB5142561ABA2FA700E77AAC /* TrailParser */,
 				BB5142671ABA2FA700E77AAC /* TrailParserTests */,
+				BB5142861AC3634A00E77AAC /* CustomTrailBuilder */,
+				BB5142971AC3634B00E77AAC /* CustomTrailBuilderTests */,
 				BB5142551ABA2FA700E77AAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +114,8 @@
 			children = (
 				BB5142541ABA2FA700E77AAC /* TrailParser.app */,
 				BB5142641ABA2FA700E77AAC /* TrailParserTests.xctest */,
+				BB5142851AC3634A00E77AAC /* CustomTrailBuilder.app */,
+				BB5142941AC3634B00E77AAC /* CustomTrailBuilderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +131,7 @@
 				BB51425D1ABA2FA700E77AAC /* MainMenu.xib */,
 				BB5142571ABA2FA700E77AAC /* Supporting Files */,
 				BB51427B1AC34B0200E77AAC /* Landmark.swift */,
+				BB51427D1AC35E6000E77AAC /* TrailMaker.swift */,
 			);
 			path = TrailParser;
 			sourceTree = "<group>";
@@ -117,6 +157,42 @@
 			isa = PBXGroup;
 			children = (
 				BB5142691ABA2FA700E77AAC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB5142861AC3634A00E77AAC /* CustomTrailBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				BB5142891AC3634A00E77AAC /* AppDelegate.swift */,
+				BB51428B1AC3634A00E77AAC /* Images.xcassets */,
+				BB51428D1AC3634B00E77AAC /* MainMenu.xib */,
+				BB5142871AC3634A00E77AAC /* Supporting Files */,
+			);
+			path = CustomTrailBuilder;
+			sourceTree = "<group>";
+		};
+		BB5142871AC3634A00E77AAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB5142881AC3634A00E77AAC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB5142971AC3634B00E77AAC /* CustomTrailBuilderTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB51429A1AC3634B00E77AAC /* CustomTrailBuilderTests.swift */,
+				BB5142981AC3634B00E77AAC /* Supporting Files */,
+			);
+			path = CustomTrailBuilderTests;
+			sourceTree = "<group>";
+		};
+		BB5142981AC3634B00E77AAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB5142991AC3634B00E77AAC /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -159,6 +235,41 @@
 			productReference = BB5142641ABA2FA700E77AAC /* TrailParserTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BB5142841AC3634A00E77AAC /* CustomTrailBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB51429C1AC3634B00E77AAC /* Build configuration list for PBXNativeTarget "CustomTrailBuilder" */;
+			buildPhases = (
+				BB5142811AC3634A00E77AAC /* Sources */,
+				BB5142821AC3634A00E77AAC /* Frameworks */,
+				BB5142831AC3634A00E77AAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomTrailBuilder;
+			productName = CustomTrailBuilder;
+			productReference = BB5142851AC3634A00E77AAC /* CustomTrailBuilder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB5142931AC3634B00E77AAC /* CustomTrailBuilderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB51429F1AC3634B00E77AAC /* Build configuration list for PBXNativeTarget "CustomTrailBuilderTests" */;
+			buildPhases = (
+				BB5142901AC3634B00E77AAC /* Sources */,
+				BB5142911AC3634B00E77AAC /* Frameworks */,
+				BB5142921AC3634B00E77AAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB5142961AC3634B00E77AAC /* PBXTargetDependency */,
+			);
+			name = CustomTrailBuilderTests;
+			productName = CustomTrailBuilderTests;
+			productReference = BB5142941AC3634B00E77AAC /* CustomTrailBuilderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -174,6 +285,13 @@
 					BB5142631ABA2FA700E77AAC = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = BB5142531ABA2FA700E77AAC;
+					};
+					BB5142841AC3634A00E77AAC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					BB5142931AC3634B00E77AAC = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = BB5142841AC3634A00E77AAC;
 					};
 				};
 			};
@@ -192,6 +310,8 @@
 			targets = (
 				BB5142531ABA2FA700E77AAC /* TrailParser */,
 				BB5142631ABA2FA700E77AAC /* TrailParserTests */,
+				BB5142841AC3634A00E77AAC /* CustomTrailBuilder */,
+				BB5142931AC3634B00E77AAC /* CustomTrailBuilderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -213,6 +333,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB5142831AC3634A00E77AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB51428C1AC3634A00E77AAC /* Images.xcassets in Resources */,
+				BB51428F1AC3634B00E77AAC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5142921AC3634B00E77AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -224,6 +360,7 @@
 				BB5142771ABA317700E77AAC /* HTMLNode.swift in Sources */,
 				BB51425A1ABA2FA700E77AAC /* AppDelegate.swift in Sources */,
 				BB51427C1AC34B0200E77AAC /* Landmark.swift in Sources */,
+				BB51427E1AC35E6000E77AAC /* TrailMaker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +372,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB5142811AC3634A00E77AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB51428A1AC3634A00E77AAC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5142901AC3634B00E77AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB51429B1AC3634B00E77AAC /* CustomTrailBuilderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -243,6 +396,11 @@
 			target = BB5142531ABA2FA700E77AAC /* TrailParser */;
 			targetProxy = BB5142651ABA2FA700E77AAC /* PBXContainerItemProxy */;
 		};
+		BB5142961AC3634B00E77AAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB5142841AC3634A00E77AAC /* CustomTrailBuilder */;
+			targetProxy = BB5142951AC3634B00E77AAC /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -250,6 +408,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				BB51425E1ABA2FA700E77AAC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		BB51428D1AC3634B00E77AAC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB51428E1AC3634B00E77AAC /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -404,6 +570,68 @@
 			};
 			name = Release;
 		};
+		BB51429D1AC3634B00E77AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CustomTrailBuilder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB51429E1AC3634B00E77AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CustomTrailBuilder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BB5142A01AC3634B00E77AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CustomTrailBuilderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomTrailBuilder.app/Contents/MacOS/CustomTrailBuilder";
+			};
+			name = Debug;
+		};
+		BB5142A11AC3634B00E77AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CustomTrailBuilderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomTrailBuilder.app/Contents/MacOS/CustomTrailBuilder";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -429,6 +657,22 @@
 			buildConfigurations = (
 				BB5142721ABA2FA700E77AAC /* Debug */,
 				BB5142731ABA2FA700E77AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB51429C1AC3634B00E77AAC /* Build configuration list for PBXNativeTarget "CustomTrailBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB51429D1AC3634B00E77AAC /* Debug */,
+				BB51429E1AC3634B00E77AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB51429F1AC3634B00E77AAC /* Build configuration list for PBXNativeTarget "CustomTrailBuilderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5142A01AC3634B00E77AAC /* Debug */,
+				BB5142A11AC3634B00E77AAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CustomTrailBuilder.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>TrailParser.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>BB5142631ABA2FA700E77AAC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB5142841AC3634A00E77AAC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB5142931AC3634B00E77AAC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
