@@ -11,6 +11,10 @@
 		BB51425C1ABA2FA700E77AAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB51425B1ABA2FA700E77AAC /* Images.xcassets */; };
 		BB51425F1ABA2FA700E77AAC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB51425D1ABA2FA700E77AAC /* MainMenu.xib */; };
 		BB51426B1ABA2FA700E77AAC /* TrailParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51426A1ABA2FA700E77AAC /* TrailParserTests.swift */; };
+		BB5142771ABA317700E77AAC /* HTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5142741ABA317700E77AAC /* HTMLNode.swift */; };
+		BB5142781ABA317700E77AAC /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5142751ABA317700E77AAC /* HTMLParser.swift */; };
+		BB51427A1ABA31D100E77AAC /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5142791ABA31D100E77AAC /* libxml2.dylib */; };
+		BB51427C1AC34B0200E77AAC /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51427B1AC34B0200E77AAC /* Landmark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,11 @@
 		BB5142641ABA2FA700E77AAC /* TrailParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrailParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5142691ABA2FA700E77AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB51426A1ABA2FA700E77AAC /* TrailParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailParserTests.swift; sourceTree = "<group>"; };
+		BB5142741ABA317700E77AAC /* HTMLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLNode.swift; sourceTree = "<group>"; };
+		BB5142751ABA317700E77AAC /* HTMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
+		BB5142761ABA317700E77AAC /* Swift-HTML-Parser-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swift-HTML-Parser-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB5142791ABA31D100E77AAC /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		BB51427B1AC34B0200E77AAC /* Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB51427A1ABA31D100E77AAC /* libxml2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +65,7 @@
 		BB51424B1ABA2FA700E77AAC = {
 			isa = PBXGroup;
 			children = (
+				BB5142791ABA31D100E77AAC /* libxml2.dylib */,
 				BB5142561ABA2FA700E77AAC /* TrailParser */,
 				BB5142671ABA2FA700E77AAC /* TrailParserTests */,
 				BB5142551ABA2FA700E77AAC /* Products */,
@@ -73,10 +84,14 @@
 		BB5142561ABA2FA700E77AAC /* TrailParser */ = {
 			isa = PBXGroup;
 			children = (
+				BB5142741ABA317700E77AAC /* HTMLNode.swift */,
+				BB5142751ABA317700E77AAC /* HTMLParser.swift */,
+				BB5142761ABA317700E77AAC /* Swift-HTML-Parser-Bridging-Header.h */,
 				BB5142591ABA2FA700E77AAC /* AppDelegate.swift */,
 				BB51425B1ABA2FA700E77AAC /* Images.xcassets */,
 				BB51425D1ABA2FA700E77AAC /* MainMenu.xib */,
 				BB5142571ABA2FA700E77AAC /* Supporting Files */,
+				BB51427B1AC34B0200E77AAC /* Landmark.swift */,
 			);
 			path = TrailParser;
 			sourceTree = "<group>";
@@ -205,7 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5142781ABA317700E77AAC /* HTMLParser.swift in Sources */,
+				BB5142771ABA317700E77AAC /* HTMLNode.swift in Sources */,
 				BB51425A1ABA2FA700E77AAC /* AppDelegate.swift in Sources */,
+				BB51427C1AC34B0200E77AAC /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,9 +339,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = TrailParser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrailParser/Swift-HTML-Parser-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -332,9 +356,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = TrailParser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrailParser/Swift-HTML-Parser-Bridging-Header.h";
 			};
 			name = Release;
 		};
