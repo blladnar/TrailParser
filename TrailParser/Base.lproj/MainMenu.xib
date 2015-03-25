@@ -15,6 +15,13 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TrailParser" customModuleProvider="target">
             <connections>
                 <outlet property="logoField" destination="Xhl-Ya-Q8f" id="S8l-oi-Gp5"/>
+                <outlet property="makerLandmarDistanceField" destination="Q1o-Ht-S6W" id="mFs-f8-0Jk"/>
+                <outlet property="makerLandmarkNameField" destination="pCE-ad-lqN" id="vWr-rQ-gND"/>
+                <outlet property="makerTrailDistanceLabel" destination="Pcp-f6-h60" id="bB0-sK-kQ6"/>
+                <outlet property="makerTrailLogoField" destination="ugG-pA-fFo" id="elv-hL-UzH"/>
+                <outlet property="makerTrailNameField" destination="go9-IX-UN3" id="Xz5-v6-nT3"/>
+                <outlet property="makerTrailNumLandmarksLabel" destination="b8z-ga-y7p" id="xay-13-RNz"/>
+                <outlet property="makerTrailOutput" destination="cIx-On-ZQu" id="Vy1-z6-h1K"/>
                 <outlet property="nameField" destination="ed5-j8-huk" id="Kjb-uC-oTa"/>
                 <outlet property="outputField" destination="rYI-dd-qey" id="2Yb-cj-BIU"/>
                 <outlet property="urlField" destination="9gu-Sk-Xa0" id="r4Y-cg-rVu"/>
@@ -724,6 +731,101 @@
                     </textField>
                 </subviews>
             </view>
+        </window>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="wiK-rp-X1w" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES" texturedBackground="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="139" y="81" width="444" height="307"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <view key="contentView" id="hsm-BM-Iuc">
+                <rect key="frame" x="0.0" y="0.0" width="444" height="307"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="go9-IX-UN3">
+                        <rect key="frame" x="20" y="265" width="176" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Trail Name" drawsBackground="YES" id="vRo-BF-TEh">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ugG-pA-fFo">
+                        <rect key="frame" x="204" y="265" width="96" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Logo" drawsBackground="YES" id="fRU-iW-LFF">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="parseWebsite:" target="Voe-Tx-rLC" id="nci-dh-NrM"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pCE-ad-lqN">
+                        <rect key="frame" x="20" y="233" width="176" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Landmark Name" drawsBackground="YES" id="f8a-v5-iw6">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q1o-Ht-S6W">
+                        <rect key="frame" x="204" y="233" width="96" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Distance (mi)" drawsBackground="YES" id="eDv-Nr-jAw">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KLC-rd-Sdg">
+                        <rect key="frame" x="308" y="230" width="116" height="25"/>
+                        <buttonCell key="cell" type="roundTextured" title="Add Landmark" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CDg-hZ-gHD">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="makerAddLandmark:" target="Voe-Tx-rLC" id="dtr-Dl-OX9"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CL7-TH-gLc">
+                        <rect key="frame" x="308" y="263" width="116" height="25"/>
+                        <buttonCell key="cell" type="roundTextured" title="Create Trail" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fNq-AR-X1L">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="makerCreateTrail:" target="Voe-Tx-rLC" id="Khn-4y-aJk"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b8z-ga-y7p">
+                        <rect key="frame" x="20" y="208" width="217" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Number of landmarks" id="uEO-o1-002">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pcp-f6-h60">
+                        <rect key="frame" x="241" y="208" width="185" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Total Mileage" id="QjD-xw-aL4">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cIx-On-ZQu">
+                        <rect key="frame" x="20" y="20" width="404" height="180"/>
+                        <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Pza-yH-dGY">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="666" y="173.5"/>
         </window>
     </objects>
 </document>

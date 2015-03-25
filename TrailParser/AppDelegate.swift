@@ -17,6 +17,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var logoField: NSTextField!
     @IBOutlet weak var outputField: NSTextField!
 
+    @IBOutlet weak var makerTrailNameField: NSTextField!
+    @IBOutlet weak var makerTrailLogoField: NSTextField!
+    @IBOutlet weak var makerLandmarkNameField: NSTextField!
+    @IBOutlet weak var makerLandmarDistanceField: NSTextField!
+    @IBOutlet weak var makerTrailNumLandmarksLabel: NSTextField!
+    @IBOutlet weak var makerTrailDistanceLabel: NSTextField!
+    @IBOutlet weak var makerTrailOutput: NSTextField!
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
         urlField.stringValue = "http://www.summitpost.org/appalachian-trail-mileage-chart/593282"
@@ -85,12 +93,36 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     
                 }
             }
-            
-            
             self.outputField.stringValue = trailMaker.trailJSON();
-
-            
         }
+    }
+    
+    var makerLandmarks = Array<Landmark>();
+    @IBAction func makerAddLandmark(sender: AnyObject)
+    {
+        var distance = self.makerLandmarDistanceField.stringValue as NSString;
+        
+        makerLandmarks.append(Landmark(name: self.makerLandmarkNameField.stringValue, distanceInMiles: distance.doubleValue));
+        
+        makerLandmarDistanceField.stringValue = "";
+        makerLandmarkNameField.stringValue = "";
+        
+        makerLandmarkNameField.becomeFirstResponder();
+    }
+    
+    @IBAction func makerCreateTrail(sender: AnyObject)
+    {
+        var maker = TrailMaker(name: self.makerTrailNameField.stringValue, logo: self.makerTrailLogoField.stringValue);
+        for landmark in makerLandmarks
+        {
+            maker.addLandmark(landmark);
+        }
+        
+        
+        self.makerTrailOutput.stringValue = maker.trailJSON();
+        self.makerTrailDistanceLabel.stringValue = "Total Mileage \(maker.trailMileage())"
+        self.makerTrailNumLandmarksLabel.stringValue = "Number of landmarks \(maker.numberOfLandmarks())";
+
     }
 
 }

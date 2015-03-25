@@ -50,5 +50,14 @@ class TrailMaker
         return jsonString!;
     }
     
+    func numberOfLandmarks() -> Int
+    {
+        return landmarks.count;
+    }
+    
+    func trailMileage() -> Double
+    {
+        return landmarks.last!.distanceInMiles;
+    }
     
 }
